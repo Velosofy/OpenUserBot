@@ -20,7 +20,7 @@ UNAPPROVED_MSG = (
     "`Hey! You have entered a forbidden place.\n\n`"
     "`I haven't approved you to PM yet.`"
     "`Wait for me to llok into your background before I allow you.\n`"
-    "`Until then, please don't spam my PM, you'll get blocked and reported if you do so!`")
+    "`Until then, please don't spam my PM, else you'll get blocked and reported!`")
 # =================================================================
 
 
@@ -69,7 +69,7 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 3:
                     await event.respond(
-                        "`You were spamming my Mastor's PM, which I didn't like.`\n"
+                        "`You were spamming my PM, which I didn't like.`\n"
                         "`You have been BLOCKED and reported as SPAM, until further notice.`"
                     )
 
