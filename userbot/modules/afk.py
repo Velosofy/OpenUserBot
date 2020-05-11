@@ -169,7 +169,7 @@ async def mention_afk(mention):
             if mention.sender_id not in USERS:
                 if AFKREASON:
                     await mention.reply(f"**{DEFAULTUSER}** is afk since {afk_since}.\
-                        \n**Because I am** `{AFKREASON}`")
+                        \n**Reason:** `{AFKREASON}`")
                 else:
                     await mention.reply(f"**{DEFAULTUSER}** is afk since {afk_since}.\nand I have left a word for you only: \n{AFKSK}\n`.` ")
                 USERS.update({mention.sender_id: 1})
@@ -178,7 +178,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await mention.reply(f"**{DEFAULTUSER}** is afk since {afk_since}.\
-                            \n**Because I am** `{AFKREASON}`")
+                            \n**Reason:** `{AFKREASON}`")
                     else:
                         await mention.reply(f"**{DEFAULTUSER}** is afk since {afk_since}.\nand I have left a word for you only: \n{AFKSK}\n`.` ")
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
@@ -245,7 +245,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(f"**{DEFAULTUSER}** Is afk since {afk_since}.\
-                        \n**Because I am** `{AFKREASON}`")
+                        \n**Reason:** `{AFKREASON}`")
                 else:
                     await sender.replyf(f"**{DEFAULTUSER}** is afk since {afk_since}.\nand I have left a word for you only: \n{AFKSK}\n`.` ")
                 USERS.update({sender.sender_id: 1})
