@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
+t# Copyright (C) 2019 The Raphielscape Company LLC.
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,10 +17,9 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`Hey! You have entered a forbidden place.\n\n`"
-    "`I haven't approved you to PM yet.\n`"
-    "`Wait for me to look into your background before I allow you.\n`"
-    "`Until then, please don't spam my PM, else you'll get blocked and reported!`")
+    "Hey! I don't appreciate you barging into my PM like this!"
+    "Did you even ask me for approving you to PM? No? Goodbye then.\n\n"
+    "`PS: you've been reported as spam already.`")
 # =================================================================
 
 
